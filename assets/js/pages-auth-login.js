@@ -73,6 +73,12 @@ document.getElementById('formAuthenticationLogin').addEventListener('submit', as
       // Guardar el token en localStorage
       localStorage.setItem('access_token', data.access_token);
       
+      // Guardar el nombre del usuario en localStorage (si la API lo devuelve)
+      if (data.user && data.user.full_name && data.user.phone) {
+        localStorage.setItem('full_name', data.user.full_name);
+        localStorage.setItem('phone', data.user.phone);
+      }
+
       // Redirigir al usuario al dashboard
       window.location.href = '/billetera.html';  // Ajusta la ruta según tu configuración
     } else {
