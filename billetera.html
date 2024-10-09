@@ -159,6 +159,8 @@
 
               </div>
               
+              
+
               <div class="row g-6">
                 <!-- Last Transaction -->
                 <div class="col-lg-5">
@@ -178,49 +180,30 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td class="pt-5">
-                              <p class="mb-0 text-heading">+$1,678</p>
-                            </td>
-                            
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">17 Mar 2022</small>
-                              </div>
-                            </td>
-                            <td class="pt-5"><span class="badge bg-label-success">Aprobado</span></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p class="mb-0 text-heading">+$839</p>
-                            </td>
-                            <td>
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">12 Feb 2022</small>
-                              </div>
-                            </td>
-                            <td><span class="badge bg-label-danger">Rechazado</span></td>
-                            
-                          </tr>
-                          
-                          <tr>
-                            <td>
-                              <p class="mb-0 text-heading">+$2,345</p>
-                            </td>
-                            <td>
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">8 Jan 2022</small>
-                              </div>
-                            </td>
-                            <td><span class="badge bg-label-secondary">Pending</span></td>
-                            
-                          </tr>
-                          
+
                         </tbody>
                       </table>
+                      <div id="no-transactions-message" class="text-center mt-5" style="display: none;">
+                        <p>Aún no has depositado nada 😔</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-6">
+                    <div class="card-body  pb-6 g-6">
+                      <div class="col-12 text-center">
+                        <h4 class="mb-5">¿Hiciste un depósito y no se ve reflejado?</h4>
+                        <div class="col-12  ">
+                          <p >No te preocupes, uno de nuestros agentes se pondrá en contacto contigo a la brevedad posible para validar tu información y al estar aprobado se reflejará automáticamente.</p>
+                          <div class="">
+                            <a href="https://api.whatsapp.com/send?phone=51945692831" class="btn btn-primary " target="_blank">
+                              <i class="ti ti-phone ti-md me-5"></i>¡O puedes escribirnos ahora! 
+                            </a>
+                          </div>
+                        </div>
+    
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -228,92 +211,32 @@
 
                 <!-- Last Transaction -->
                 <div class="col-lg-7">
-                  <div class="card ">
+                  <div class="card h-100">
                     <div class="card-header d-flex justify-content-between align-items-center">
                       <h5 class="card-title m-0 me-2">
                         Retiros
                       </h5>
                     </div>
-                    <div class="table-responsive">
-                      <table class="table table-borderless border-top">
-                        <thead class="border-bottom">
-                          <tr>
-                            <th>MONTO</th>
-                            <th>FECHA</th>
-                            <th>MOTIVO</th>
-                            <th>ESTADO</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="pt-5">
-                              <p class="mb-0 text-heading text-nowrap">-$1,678</p>
-                            </td>
-                            
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">17 Mar 2022</small>
-                              </div>
-                            </td>
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                <small class="text-body text-nowrap">Compra</small>
-                                <p class="mb-0 text-heading text-nowrap">#123456789</p>
-                                
-                              </div>
-                            </td>
-                            <td class="pt-5"><span class="badge bg-label-success">Aprobado</span></td>
-                          </tr>
-                          <tr>
-                            <td class="pt-5">
-                              <p class="mb-0 text-heading text-nowrap">-$1,678</p>
-                            </td>
-                            
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">17 Mar 2022</small>
-                              </div>
-                            </td>
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                <small class="text-body text-nowrap">Compra</small>
-                                <p class="mb-0 text-heading text-nowrap">#123456789</p>
-                                
-                              </div>
-                            </td>
-                            <td class="pt-5"><span class="badge bg-label-success">Aprobado</span></td>
-                          </tr>
-                          <tr>
-                            <td class="pt-5">
-                              <p class="mb-0 text-heading text-nowrap">-$1,678</p>
-                            </td>
-                            
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                
-                                <small class="text-body text-nowrap">17 Mar 2022</small>
-                              </div>
-                            </td>
-                            <td class="pt-5">
-                              <div class="d-flex flex-column">
-                                <small class="text-body text-nowrap">Enviado a:</small>
-                                <p class="mb-0 text-heading text-nowrap">0424-99-999-999</p>
-                                
-                              </div>
-                            </td>
-                            <td class="pt-5"><span class="badge bg-label-success">Aprobado</span></td>
-                          </tr>
-
-                        </tbody>
-                      </table>
+                    <div class="card-body  py-6 g-6 border-top">
+                      <div class="col-12 text-center">
+                        <h4 class="mb-5">Aún no has comprado con tus Dólares. . .</h4>
+                        <div class="col-12  ">
+                          <p>Estamos agregando nuevos productos todos los días, con ofertas increíbles y entregas en tiempo record 🙌</p>
+                          <a href="https://hugee.site/" class="btn btn-primary " target="_blank">
+                            <i class="ti ti-shopping-bag ti-md me-5"></i> ¡Vamos de compras! 
+                          </a>
+                        </div>
+    
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
                 <!--/ Last Transaction -->
                 
               </div>
+
+              
             </div>
             <!-- / Content -->
             
@@ -376,7 +299,7 @@
     <script src="assets/js/main.js?v=1.3343"></script>
 
     <!-- Page JS -->
-    
+    <script src="assets/js/pages-billetera.js?v=1.3343"></script>
     
  </body>
 </html>

@@ -11,7 +11,19 @@
   <head>
 
     <title>Nuevo Depósito</title>
-
+    <script>
+       // Verificar si el usuario está autenticado
+      function checkAuthentication() {
+        const operation = localStorage.getItem('operation');
+        
+        if (!operation) {
+          // Si no hay operation, redirigir al usuario a la página de inicio de sesión
+          window.location.href = 'auth-login-cover.html';  // Ajusta la ruta según tu configuración
+        } 
+      }
+      // Ejecutar la verificación al cargar la página
+      window.onload = checkAuthentication;
+    </script>
     <meta name="description" content="Nuevo Depósito" />
 
         <!-- Favicon -->
